@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Colazo Brasil 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Brazil Theme Colors */
+:root{
+    --primary:#009c3b;
+    --secondary:#ffdf00;
+    --accent:#e61c23; /* Coca-Cola red */
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    padding:10px 18px;
+    border-radius:18px;
+}
+
+.logo-icon{
+    width:46px;
+    height:46px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--accent);
+    color:#fff;
+    font-weight:700;
+}
+
+.logo-text{
+    font-size:1.6rem;
+    font-weight:700;
+    color:var(--accent);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8%;
+    color:white;
+
+    background:
+        linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1600');
+    background-size:cover;
+}
+
+/* TEXT */
+
+.hero h1{
+    font-size:4.5rem;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.btn{
+    padding:14px 35px;
+    background:var(--secondary);
+    color:#000;
+    border-radius:40px;
+    text-decoration:none;
+}
+
+/* SECTION */
+
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:var(--primary);
+    margin-bottom:50px;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:var(--accent);
+}
+
+.tag{
+    background:var(--primary);
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+/* ABOUT */
+
+.about{
+    background:#f8f8f8;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<div class="logo-icon">C</div>
+<div class="logo-text">Colazo Brasil</div>
+</div>
+
+<nav>
+<a href="#home">Início</a>
+<a href="#products">Produtos</a>
+<a href="#about">Sobre</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div>
+<h1>FIFA 2026 Brasil ⚽</h1>
+
+<p>
+Experimente a energia do futebol com Colazo e o sabor inspirado na Coca-Cola.  
+Celebre cada gol com refrescância única!
+</p>
+
+<a href="#products" class="btn">Ver Produtos</a>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+<h2 class="section-title">Sabores para a Copa 2026</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=500" width="150">
+<h3>Colazo Original</h3>
+<p>Sabor clássico estilo Coca-Cola para fãs de futebol.</p>
+<span class="tag">Popular</span>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=500" width="150">
+<h3>Zero Brasil</h3>
+<p>Zero açúcar com máximo sabor.</p>
+<span class="tag">Saudável</span>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500" width="150">
+<h3>Maracujá Energy</h3>
+<p>Energia tropical para dias de jogo.</p>
+<span class="tag">Novo</span>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500" width="150">
+<h3>Lima & Limão</h3>
+<p>Refrescância cítrica brasileira.</p>
+<span class="tag">Refrescante</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+<h2 class="section-title">Sobre a Colazo</h2>
+
+<p style="max-width:800px;margin:auto;text-align:center;">
+Inspirada na paixão do Brasil pelo futebol e no legado refrescante da Coca-Cola,
+Colazo traz sabores vibrantes para a Copa do Mundo FIFA 2026.
+Cada bebida é criada para celebrar momentos, unir torcedores e refrescar emoções.
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<h3>Colazo Brasil • FIFA 2026</h3>
+
+<p>Inspirado no espírito Coca-Cola</p>
+
+<div>
+<a href="#">Facebook</a> |
+<a href="#">Instagram</a> |
+<a href="#">YouTube</a>
+</div>
+
+<p style="margin-top:15px;">
+© 2026 Colazo Brasil
+</p>
+
+</footer>
+
+</body>
+</html>
