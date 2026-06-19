@@ -43,6 +43,13 @@ header{
     backdrop-filter:blur(10px);
 }
 
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:500;
+}
+
 /* LOGO */
 
 .logo{
@@ -76,7 +83,6 @@ header{
 
 .flag{
     width:40px;
-    margin-left:10px;
 }
 
 /* HERO */
@@ -104,12 +110,21 @@ header{
     margin:20px 0;
 }
 
+.hero img{
+    width:180px;
+    margin:20px auto;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
 .btn{
     padding:14px 35px;
     background:var(--secondary);
     color:#000;
     border-radius:40px;
     text-decoration:none;
+    font-weight:600;
 }
 
 /* SECTION */
@@ -169,10 +184,10 @@ header{
     padding:30px;
 }
 
-a{
+.footer a{
     color:white;
-    text-decoration:none;
     margin:0 5px;
+    text-decoration:none;
 }
 
 </style>
@@ -183,15 +198,15 @@ a{
 <header>
 
 <div class="logo">
-<div class="logo-icon">C</div>
-<div class="logo-text">Colazo Brasil</div>
-<img src="https://flagcdn.com/w40/br.png" class="flag">
+    <div class="logo-icon">C</div>
+    <div class="logo-text">Colazo Brasil</div>
+    <img src="https://flagcdn.com/w40/br.png" class="flag" alt="Brazil Flag">
 </div>
 
 <nav>
-<a href="#home">Início</a>
-<a href="#products">Produtos</a>
-<a href="#about">Sobre</a>
+    <a href="#home">Início</a>
+    <a href="#products">Produtos</a>
+    <a href="#about">Sobre</a>
 </nav>
 
 </header>
@@ -202,6 +217,8 @@ a{
 
 <div>
 <h1>Abra a Felicidade</h1>
+
+<img src="https://images.unsplash.com/photo-1596803244618-8f9c7b4b8e87?w=400" alt="Coca Cola Drink">
 
 <p>
 Refresque seus momentos com o sabor único da Colazo.  
@@ -225,14 +242,14 @@ Inspirada na energia do Brasil e no estilo clássico da Coca-Cola.
 <div class="card">
 <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=500" width="150">
 <h3>Colazo Original</h3>
-<p>Sabor clássico inspirado na tradição Coca-Cola.</p>
+<p>Sabor clássico inspirado na tradição.</p>
 <span class="tag">Popular</span>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=500" width="150">
 <h3>Zero Açúcar</h3>
-<p>Sem açúcar, com o mesmo sabor incrível.</p>
+<p>Sem açúcar, com o mesmo sabor.</p>
 <span class="tag">Leve</span>
 </div>
 
@@ -246,7 +263,7 @@ Inspirada na energia do Brasil e no estilo clássico da Coca-Cola.
 <div class="card">
 <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500" width="150">
 <h3>Lima & Limão</h3>
-<p>Refrescância cítrica irresistível.</p>
+<p>Refrescância cítrica.</p>
 <span class="tag">Refrescante</span>
 </div>
 
@@ -261,9 +278,8 @@ Inspirada na energia do Brasil e no estilo clássico da Coca-Cola.
 <h2 class="section-title">Sobre a Colazo</h2>
 
 <p style="max-width:800px;margin:auto;text-align:center;">
-Colazo é uma marca inspirada na alegria, na cultura vibrante do Brasil
-e na tradição refrescante das bebidas tipo cola.  
-Criamos sabores únicos para acompanhar seus melhores momentos.
+Colazo é uma marca inspirada na alegria e na cultura vibrante do Brasil, 
+com bebidas refrescantes que acompanham todos os seus momentos.
 </p>
 
 </section>
