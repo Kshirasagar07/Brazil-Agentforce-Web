@@ -304,7 +304,7 @@ com bebidas refrescantes que acompanham todos os seus momentos.
 </footer>
 
 <script type='text/javascript'>
-	window.addEventListener("onEmbeddedMessagingReady", () => {
+window.addEventListener("onEmbeddedMessagingReady", () => {
 		try {
 			embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
 				"Country": "Brazil"
@@ -317,13 +317,14 @@ com bebidas refrescantes que acompanham todos os seus momentos.
 
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US';
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
 			embeddedservice_bootstrap.init(
 				'00DVa000006ADuz',
 				'Coke_agent_Channel',
-				'https://site.com',
+				'https://ecic2--nexus2dev.sandbox.my.site.com/ESWCokeagentChannel1781782887955',
 				{
-					scrt2URL: 'https://salesforce-scrt.com'
+					scrt2URL: 'https://ecic2--nexus2dev.sandbox.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -331,8 +332,7 @@ com bebidas refrescantes que acompanham todos os seus momentos.
 		}
 	};
 </script>
-<script type='text/javascript' src='https://site.com/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
+<script type='text/javascript' src='https://ecic2--nexus2dev.sandbox.my.site.com/ESWCokeagentChannel1781782887955/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
